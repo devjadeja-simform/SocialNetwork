@@ -53,7 +53,7 @@ workflows:
 
     when:
       paths:
-        - include: composition-config.yaml
+        - include: README.md
 
     # when:
     #   condition:
