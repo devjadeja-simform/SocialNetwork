@@ -50,7 +50,12 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - say-hi
+
     when:
-      condition:
-        - changes:
-            - README.md
+      paths:
+        - include: composition-config.yaml
+
+    # when:
+    #   condition:
+    #     - changes:
+    #         - README.md
